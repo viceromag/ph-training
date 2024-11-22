@@ -36,3 +36,11 @@ html {
 .form-wrapper section + section {
     margin-top: 20px;
 }
+
+.img-debrief {
+    width: 100%;
+}
+
+.list-debrief li {
+    padding: 10px;
+}

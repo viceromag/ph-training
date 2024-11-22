@@ -1,4 +1,38 @@
 <template>
+  <h3>Project 15</h3>
+  <ul>
+    <li>
+      What made you smile?
+      <p>We were able to use 3DSecureIO server easily.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>
+          When we first tried Rebilly's internal 3DS test server (TestSandbox3dsServer), the popup windows for 3DS was not informative, not clear what was going behind the scene
+        </li>
+        <li>
+          We could not find in documentation 3DS server decline cards for TestSandbox3dsServer. Our decline cards refer to declining from the gateway, not from 3DS. In such case it still passes 3DS server validation.
+        </li>
+        <img class="img-debrief" src="/src/assets/p15-1.png" alt="">
+        <li>
+          Not related to 3DS, but on decline "Choose another payment method" redirects to our hosted payment form, which seems incorrect.
+        </li>
+        <img class="img-debrief" src="/src/assets/p15-3.png" alt="">
+        <li>
+          We don’t have Canadian bank issued testing card in documentation for 3DS manual challenge in ThreeDSecureIO
+        </li>
+        <li>
+          We tried a random AMEX card for testing (with proper gateway account settings setup) and ThreeDSecureIO declined that transaction. There is nothing in documentation that describes this behavior.
+        </li>
+        <li>
+          The caption for failed 3DS auth has a "player" term that is related to casnino, a "customer" should be used instead.
+        </li>
+        <img class="img-debrief" src="/src/assets/p15-2.png" alt="">
+      </ul>
+    </li>
+  </ul>
+
   <h3>Project 14</h3>
   <ul>
     <li>
