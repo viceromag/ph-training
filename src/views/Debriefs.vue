@@ -1,5 +1,5 @@
 <template>
-  <h3>Project 15</h3>
+  <h3>Project 16</h3>
   <ul>
     <li>
       What made you smile?
