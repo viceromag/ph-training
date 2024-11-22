@@ -3,6 +3,42 @@
   <ul>
     <li>
       What made you smile?
+      <p>We were able to quickly reuse existing deposit setup for payouts.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>
+          If a customer doesn't have a bank account in their payment instruments, they are still able to request a bank-transfer payout.
+          It's displayed in a weird way in Recomm with no gateway account associated, even though our organization had one.
+        </li>
+        <img class="img-debrief" src="/src/assets/p16-1.png" alt="">
+        <li>
+          When we tried to add a bank account via Recomm using a random fake account number and routing number, a validation error was displayed as raw JSON
+        </li>
+        <img class="img-debrief" src="/src/assets/p16-2.png" alt="">
+        <li>
+          In instruments, it looks like customer should be able to add a bank account as there's a "Use existing bank transfer" / "Add new bank transfer" button.
+          But it never allowed us to enter a bank information, we were only able to edit the billing address.
+        </li>
+        <img class="img-debrief" src="/src/assets/p16-3.png" alt="">
+        <li>
+          The "Allocate" input displayed CAD as just $ (maybe it's expected).
+        </li>
+        <img class="img-debrief" src="/src/assets/p16-4.png" alt="">
+        <li>
+          It was not obvious for us if it's even possible to change the "it will be fullfilled in 48 hours" text after successful payout processing.
+          We couldn't find that in the documentation.
+        </li>
+        <img class="img-debrief" src="/src/assets/p16-5.png" alt="">
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Project 15</h3>
+  <ul>
+    <li>
+      What made you smile?
       <p>We were able to use 3DSecureIO server easily.</p>
     </li>
     <li>
