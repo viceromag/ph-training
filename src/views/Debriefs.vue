@@ -1,4 +1,40 @@
 <template>
+  <h3>Project 17</h3>
+  <ul>
+    <li>
+      What made you smile?
+      <p>No coding was needed.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>
+          We were unable to use payout with echeck. The ready-to-pay API returns echeck as available payment method but doesn't render it.
+        </li>
+        <img class="img-debrief" src="/src/assets/p17-1.png" alt="">
+        <li>
+          When we tried to add a echeck instrument via Recomm, a validation error was displayed as raw JSON.
+        </li>
+        <img class="img-debrief" src="/src/assets/p17-2.png" alt="">
+        <li>
+          "Interac" as a payout method won't actually work in Live environment with 2/3 gateways that support Interac as a payment method.
+          For example, Gigadat only supports "Interac-eTransfer" and "Interac-express". The merchant might create a gateway account thinking it can support Interac payouts, but it won't.
+          It won't be obvious for the merchant why the payout gets declined. We might need to gather and display payment methods available for payout for a gateway account. Currently only
+          a developer can check the payout method implementation in related gateway integrations to find what methods can be used for payout - see
+          <a href="https://github.com/Rebilly/rebilly/blob/d3fd9d17c7d5f5a02e2e306e1a8a550823c43dec/backend/core/packages/payment-gateways/src/Adapters/Gigadat/Gigadat.php#L209">Gigadat code</a>
+        </li>
+        <li>
+          "Interac" method added through customer management in Rebilly dashboard doesn't specify what kind of "identification" should be used when making Interac payouts - like IBAN for bank transfer.
+        </li>
+        <li>
+          When we were looking to add a payment instrument via Customer management in Rebilly dashboard, we tried clicking "Set up payment instrument" - it took us to adding a bank account
+          for paramount-eft, which was very confusing.
+        </li>
+        <img class="img-debrief" src="/src/assets/p17-3.png" alt="">
+        <img class="img-debrief" src="/src/assets/p17-4.png" alt="">
+      </ul>
+    </li>
+  </ul>
   <h3>Project 16</h3>
   <ul>
     <li>
