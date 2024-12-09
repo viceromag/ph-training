@@ -1,4 +1,25 @@
 <template>
+  <h3>Project 18</h3>
+  <ul>
+    <li>
+      What made you smile?
+      <p>The task was fairly easy to understand.</p>
+      <p>It was easy to enable Google Pay and Apple Pay from Gateway accounts.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>Display name and Merchant name are inconsistently written on Gateway accounts page, even though the descriptions are the same.</li>
+        <li>We could not find Google Pay documentation on our side.</li>
+        <li>It was not clear how to test Google Pay integration at first.</li>
+        <li>We were unable to test decline case via Google Pay.</li>
+        <li>Apple Pay integration is not straightforward and clear. It requires actual icloud account integration with Rebilly account.</li>
+        <li>Apple Pay is not displayed on Mac on any browser, except Safari. It was mentioned in docs, but still seems like a buggy behavior.</li>
+        <img class="img-debrief" src="/src/assets/p18-1.png" alt="">
+        <li>We tried to proceed on Safari via Apple Pay with personal credit card, but the error message was unclear, what was failed. We did not get actual bank notification regarding the transaction.</li>
+      </ul>
+    </li>
+  </ul>
   <h3>Project 17</h3>
   <ul>
     <li>
