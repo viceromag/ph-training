@@ -1,4 +1,20 @@
 <template>
+  <h3>Project 19</h3>
+  <ul>
+    <li>
+      What made you smile?
+      <p>The task was fairly easy to understand.</p>
+      <p>It was easy to enable Google Pay and Apple Pay from Gateway accounts.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>Once the LTR threshold is reached, automated tagging does not working directly on a first try. It will add tag to customer on following requests. The order of backend event listeners is probably incorrect.</li>
+        <li>If there is no gateway available to be added as Add another payment method in rules engine, UI seems like a buggy, because intuitively one may think the link is clickable, but actually it is not.</li>
+        <img class="img-debrief" src="/src/assets/p19-1.png" alt="">
+      </ul>
+    </li>
+  </ul>
   <h3>Project 18</h3>
   <ul>
     <li>
