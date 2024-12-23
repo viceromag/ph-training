@@ -16,6 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/project16">Project 16</RouterLink>
         <RouterLink to="/project17">Project 17</RouterLink>
         <RouterLink to="/project18">Project 18</RouterLink>
+        <RouterLink to="/project20">Project 20</RouterLink>
         <RouterLink to="/debriefs" style="color: white;background: black; font-weight: bold; padding: 6px 12px;border-radius: 4px;">Debriefs</RouterLink>
       </nav>
     </div>

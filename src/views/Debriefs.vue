@@ -1,10 +1,31 @@
 <template>
+  <h3>Project 20</h3>
+  <ul>
+    <li>
+      What made you smile?
+      <p>We were able to make a successful transaction.</p>
+    </li>
+    <li>
+      What did you find confusing? Did you encounter any issues?
+      <ul class="list-debrief">
+        <li>The "play now" redirect button caption after is a casino term, it should be more neutral. Doesn't seem like that caption can be changed.</li>
+        <img class="img-debrief" src="/src/assets/p20-1.png" alt="">
+        <li>When we tried to add a new card, the "address" window locked after a couple of characters were entered. We were able to reproduce it a couple of times.</li>
+        <img class="img-debrief" src="/src/assets/p20-2.png" alt="">
+        <li>Before CVV input is fully rendered, it's possible to click on "continue" button, avoiding validation. This locks the payment process and you have to reload the page to start again.</li>
+        <img class="img-debrief" src="/src/assets/p20-3.png" alt="">
+        <li>After decline and going back to other methods, we were unable to select them and complete the transaction.</li>
+        <li>Customization seem limited, we didn't find a way to remove "existing instruments" block, or change the text.</li>
+        <li>No way to manage existing cards - for example, delete them.</li>
+        <li>The form can be huge if the customer has many payment instruments.</li>
+      </ul>
+    </li>
+  </ul>
   <h3>Project 19</h3>
   <ul>
     <li>
       What made you smile?
-      <p>The task was fairly easy to understand.</p>
-      <p>It was easy to enable Google Pay and Apple Pay from Gateway accounts.</p>
+      <p>This was probably the easiest project to do so far, it was very intuitive.</p>
     </li>
     <li>
       What did you find confusing? Did you encounter any issues?

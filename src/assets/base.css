@@ -44,3 +44,21 @@ html {
 .list-debrief li {
     padding: 10px;
 }
+
+.r-payment-method-item .r-payment-method-item-label {
+    color: black;
+}
+
+:root {
+    --r-payment-method-item-border-color: #AFE1AF;
+    --r-payment-method-item-border-color-hover: #AFE1AF;
+    --r-font-family: "Inter", serif;
+    --r-border-radius: 0;
+}
+:host {
+    margin: 0 auto;
+    --r-background: #484343;
+    --r-text: white;
+    --r-text-muted: black;
+    --r-button-text-color: black;
+}
